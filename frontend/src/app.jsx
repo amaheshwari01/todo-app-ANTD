@@ -15,9 +15,9 @@ import Footer from "./components/footer";
 
 const App = () => {
 
-  const [ todos, setTodos ] = useState(null);
-  const [ todo, setTodo ] = useState(null);
-  const [ update, setUpdate ] = useState(null);
+  const [todos, setTodos] = useState(null);
+  const [todo, setTodo] = useState(null);
+  const [update, setUpdate] = useState(null);
 
   const states = {
     todos,
@@ -31,14 +31,14 @@ const App = () => {
   return <MainContext.Provider value={states}>
     <div className="app-container">
       <Semantic.Segment className="list-container">
-        <Title text="Todo Application"/>
+        <Title text="Todo Application" />
         <Form />
         <Semantic.Divider />
         <div className="app-item-list">
           <List />
         </div>
         <Semantic.Divider />
-        <Footer todos={todos}/>
+        <Footer todos={todos} />
       </Semantic.Segment>
     </div>
   </MainContext.Provider>;
